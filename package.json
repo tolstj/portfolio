@@ -7,7 +7,7 @@
     "build:html": "html-minifier --input-dir ./src --output-dir ./dist --collapse-whitespace --file-ext html",
     "build:css": "node-sass --output-style compressed -o dist/css src/sass",
     "build:js": "uglifyjs src/js/*.js -m -c -o dist/js/app.js",
-    "build:images": "imagemin src/images/**/* --out-dir=dist/images",
+    "build:images": "imagemin src/images --out-dir=dist/images",
     "serve": "browser-sync start --server --files 'dist/*.html, dist/css/*.css, dist/js/*.js' --startPath ./dist",
     "watch:html": "onchange 'src/' -- npm run build:html",
     "watch:css": "onchange 'src/sass' -- npm run build:css",

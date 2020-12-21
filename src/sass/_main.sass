@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap')
+
+a
+  text-decoration: none
+  color: inherit
+
+li
+  list-style-type: none
+
+html, h2
+  font-family: 'Roboto', sans-serif
+  font-size: 18px
+
+header
+  display: flex
+  flex-direction: row
+  justify-content: space-around
+  align-items: center
+  height: 128px
+  margin: 32px 0
+
+  .avatar, .info, .frontend, .backend
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    height: 100%
+
+  .avatar
+    width: 128px
+
+    img
+      border-radius: 50%
+
+  .frontend
+    align-items: center
+
+    ul
+      display: grid
+      grid-template-columns: 1fr 1fr 1fr
+
+      li
+        margin: 20px 10px 0
+
+  .backend
+    align-items: center
+    h2
+      text-decoration: line-through
+    div
+      display: flex
+      align-items: center
+      flex-grow: 2
+
+main
+  padding: 128px 15px
+
+  h1
+    font-size: 24px
+    text-align: center
+
+  article
+    display: flex
+    justify-content: space-around
+    height: 320px
+    margin: 128px auto 0
+
+    > a > img
+      box-sizing: border-box
+      max-width: 512px
+      border: 2px solid black
+
+    .info
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      max-width: 512px
+
+    h2
+      text-align: center
+
+    p
+      text-align: justify
+
+    footer
+      display: flex
+      justify-content: space-between
+      align-items: flex-end
